@@ -1,0 +1,23 @@
+[general]
+; Time zone in IANA Time Zone Database format:
+time_zone = "Europe/London"
+
+; Custom name for Domain Monitor, e.g. if you
+; want to use a company brand name rather than
+; the default value of 'Domain Monitor':
+custom_name = "Domain Monitor"
+
+[email_headers]
+; This section only applies if you want to
+; prepend raw SMTP headers to the outputted
+; report (using the `--smtp-headers`
+; command-line option), e.g. for submitting
+; it in raw format directly to an SMTP server.
+; In most cases, these can be left as default
+; or blank. 
+
+; Prepend 'From' header:
+from_address = "domain-monitor@example.test"
+
+; Prepend 'To' header:
+to_address = "domain-alerts@example.test"
